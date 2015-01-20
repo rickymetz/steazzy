@@ -9,7 +9,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/Hover/css/hover.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -24,51 +25,141 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">steazzy</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="special-header-font text-center">
+            Steazzy
+          </h1>
+          <h2 class="text-center subheader-spacing">
+            Fresh Steam Games automatically delivered to your inventory every week
+          </h2>
         </div>
       </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-
     </div>
+
+    <div class="container">
+      <div class="dark-container">
+        <div class="row">
+          <div class="col-xs-12">
+           <form>
+              <div class="form-group form-spacing">
+              <label class="label-header" for="steamID">Your Steam Username</label>
+                <div class="input-group">
+                  <span class="input-group-addon" id="steamID">steamcommunity.com/id/</span>
+                  <input type="text" class="form-control" placeholder="username" aria-describedby="steamID">
+                </div>
+              </div>
+
+              <div class="form-spacing">
+                <label class="label-header">Your Steazzy Weekly Budget</label>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="radio">
+                      <label class="primary-labels">
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        $5.00
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                   <div class="radio">
+                    <label class="primary-labels">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      $10.00
+                    </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-spacing">
+                <label class="label-header"> Your Operating Systems</label>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="checkbox">
+                      <label class="primary-labels">
+                        <input type="checkbox"> Windows 7
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <label class="primary-labels">
+                        <input type="checkbox"> Windows 8
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="checkbox">
+                      <label class="primary-labels">
+                        <input type="checkbox"> MacOSX
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <label class="primary-labels">
+                        <input type="checkbox"> Linux
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" id="overlap-btn" class="btn-lg steazzy-btn center-block">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="special-header-font text-center">FAQ</h2>
+            <h4 class="faq-header">1. What kind of games will Steazzy get for me?</h4>
+            <p>Steazzy will search and purchase great games that you do not currently have in your library. This may be a game you’ve heard of or it may be a undiscovered gem. It’s an adventure.</p>
+
+            <h4 class="faq-header">2. Why can’t I select the catagorey of games I’m interested in?</h4>
+            <p>Steazzy is still in it’s early stages, and has such is running very lean. We plan to expand the functionality as it grows based on the feedback of community members like you.</p>
+
+
+            <h4 class="faq-header">3. If I don’t like a game can I get a refund?</h4>
+            <p>Unfortunately no. We comply with Steam’s official policy which does not allow for refunds. It is however, very easy to cancel your service with Steazzy if you are disatisfied.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="final-plea">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2 class="special-header-font text-center">Try it Today</h2>
+            <h2 class="text-center subheader-spacing">New games are out there waiting to be played!</h4>
+            <a class="btn-lg steazzy-btn" href="#" role="button">Subcribe Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
