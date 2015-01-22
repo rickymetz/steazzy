@@ -38,14 +38,14 @@ $dropdown-header-color:          #927CC2;
 $dropdown-caret-color:           #927CC2;
 
 /* Colors */
-$primary-brand: #55DBFF;
-$secondary-brand: #F970A6;
+$primary-brand: #927CC2;
+$secondary-brand: #55DBFF;
 
 /* Typography */
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Megrim);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Orbitron:400,700);
 $font-family-sans-serif:  'Source Sans Pro', sans-serif;
-$special-header-font: 'Megrim', cursive;
+$special-header-font: 'Orbitron', sans-serif;
 $text-color:  #fff;
 $headings-color: $primary-brand;
 $btn-font-weight: 700;
@@ -60,10 +60,10 @@ body{
 }
 
 ::selection {
-  background: $secondary-brand; /* WebKit/Blink Browsers */
+  background: $primary-brand; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $secondary-brand; /* Gecko Browsers */
+  background: $primary-brand; /* Gecko Browsers */
 }
 
 /* Responsive: Portrait tablets and up */
@@ -72,25 +72,67 @@ body{
     max-width: 1024px;
   }
 }
-
+.user-img{
+	height: auto;
+	width: auto;
+	max-height: $navbar-height;
+	max-width: $navbar-height;
+}
 .cover-photo{
 	width: 100%;
-	height: 200px;
+	height: 180px;
 	background: linear-gradient(rgba(78,193,233,0.5) 0%, rgba(146,124,194,0.5) 100%), url(../images/space.png) no-repeat;
 	background-size: cover;
 }
 
 .profile-img{
 	border-radius: 100px;
-	border: 4px solid #2D2442;
+	border: 4px solid $primary-brand;
 }
 
 .profile-top-info{
-	margin-top: 65px;
+	margin-top: 60px;
 }
 
 .main-content{
 	margin-top: 65px;
+}
+.top-item-position{
+	margin-top: 20px;
+	margin-left: -40px;
+}
+.game-list-img{
+	margin-bottom: 30px;
+}
+
+.sidebar-item{
+	margin-bottom: 30px;
+}
+.info{
+	margin-bottom: 20px;
+	&:first-child{
+		margin-top: 20px;
+	}
+}
+
+.info-label{
+	color: $primary-brand;
+	margin: 0;
+}
+
+.color-span{
+	color: white;
+}
+
+.info-data{
+	color: white;
+	font-size: 24px;
+	margin: 0;
+	& span{
+		color: $primary-brand;
+		margin-left: 5px;
+		font-size: 14px;
+	}
 }
 
 .steazzy-btn{
@@ -124,4 +166,33 @@ body{
 }
 .col-padding{
 	padding: 15px;
+}
+
+.steazzy-font{
+	font-family: $special-header-font;
+	font-weight: bold;
+}
+.profile-level{
+	display: inline-block;
+	width: 50px;
+	line-height: 40px;
+	border-radius: 30px;
+	border: 5px solid $primary-brand;
+	text-align: center;
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+}
+
+.cover-text{
+	color: white;
+	text-shadow: 0 2px 2px darken($primary-brand, 80%);
+}
+
+.cover-header{
+	display: inline-block;
+	@extend .cover-text;	
+	& + p{
+		margin-left: 10px;
+		display: inline-block;
+	}
 }

@@ -1,50 +1,87 @@
 /* Variables */
 /* Colors */
 /* Typography */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Megrim);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Orbitron:400,700);
 body {
   background-color: #2D2442 !important;
   height: 100%;
   margin: 0 !important; }
 
 ::-moz-selection {
-  background: #f970a6;
+  background: #927cc2;
   /* WebKit/Blink Browsers */ }
 
 ::selection {
-  background: #f970a6;
+  background: #927cc2;
   /* WebKit/Blink Browsers */ }
 
 ::-moz-selection {
-  background: #f970a6;
+  background: #927cc2;
   /* Gecko Browsers */ }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1024px; } }
+.user-img {
+  height: auto;
+  width: auto;
+  max-height: 35px;
+  max-width: 35px; }
+
 .cover-photo {
   width: 100%;
-  height: 200px;
+  height: 180px;
   background: linear-gradient(rgba(78, 193, 233, 0.5) 0%, rgba(146, 124, 194, 0.5) 100%), url(../images/space.png) no-repeat;
   background-size: cover; }
 
 .profile-img {
   border-radius: 100px;
-  border: 4px solid #2D2442; }
+  border: 4px solid #927cc2; }
 
 .profile-top-info {
-  margin-top: 65px; }
+  margin-top: 60px; }
 
 .main-content {
   margin-top: 65px; }
+
+.top-item-position {
+  margin-top: 20px;
+  margin-left: -40px; }
+
+.game-list-img {
+  margin-bottom: 30px; }
+
+.sidebar-item {
+  margin-bottom: 30px; }
+
+.info {
+  margin-bottom: 20px; }
+  .info:first-child {
+    margin-top: 20px; }
+
+.info-label {
+  color: #927cc2;
+  margin: 0; }
+
+.color-span {
+  color: white; }
+
+.info-data {
+  color: white;
+  font-size: 24px;
+  margin: 0; }
+  .info-data span {
+    color: #927cc2;
+    margin-left: 5px;
+    font-size: 14px; }
 
 .steazzy-btn {
   background-image: linear-gradient(#55dbff 0%, #5269d1 100%);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   border: 0;
-  color: #001b22;
+  color: #050408;
   text-decoration: none;
   font-weight: 700;
   transition: all .5s; }
@@ -59,7 +96,7 @@ body {
     -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
             transform: translateY(-5px);
-    box-shadow: 0px 0px 25px #f970a6; }
+    box-shadow: 0px 0px 25px #55dbff; }
 
 .img-fill img {
   width: 100%;
@@ -71,6 +108,31 @@ body {
 
 .col-padding {
   padding: 15px; }
+
+.steazzy-font {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold; }
+
+.profile-level {
+  display: inline-block;
+  width: 50px;
+  line-height: 40px;
+  border-radius: 30px;
+  border: 5px solid #927cc2;
+  text-align: center;
+  /* or 50% */
+  border-radius: 30px;
+  /* or 50% */ }
+
+.cover-text, .cover-header {
+  color: white;
+  text-shadow: 0 2px 2px black; }
+
+.cover-header {
+  display: inline-block; }
+  .cover-header + p {
+    margin-left: 10px;
+    display: inline-block; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -1030,7 +1092,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #55dbff; }
+  color: #927cc2; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -2732,21 +2794,21 @@ select[multiple].input-lg,
     background-color: #333333; }
 
 .btn-primary {
-  color: #001b22;
-  background-color: #55dbff;
-  border-color: #3bd6ff; }
+  color: #050408;
+  background-color: #927cc2;
+  border-color: #846bba; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-    color: #001b22;
-    background-color: #22d0ff;
-    border-color: #00c8fd; }
+    color: #050408;
+    background-color: #7559b2;
+    border-color: #64499e; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #55dbff;
-    border-color: #3bd6ff; }
+    background-color: #927cc2;
+    border-color: #846bba; }
   .btn-primary .badge {
-    color: #55dbff;
-    background-color: #001b22; }
+    color: #927cc2;
+    background-color: #050408; }
 
 .btn-success {
   color: white;
