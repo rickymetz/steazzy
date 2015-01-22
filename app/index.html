@@ -25,125 +25,175 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="special-header-font text-center">
-            Steazzy
-          </h1>
-          <h2 class="text-center subheader-spacing">
-            Fresh Steam Games automatically delivered to your inventory every week
-          </h2>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Steazzy</a>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="dark-container">
-        <div class="row">
-          <div class="col-xs-12">
-           <form>
-              <div class="form-group form-spacing">
-              <label class="label-header" for="steamID">Your Steam Username</label>
-                <div class="input-group">
-                  <span class="input-group-addon" id="steamID">steamcommunity.com/id/</span>
-                  <input type="text" class="form-control" placeholder="username" aria-describedby="steamID">
-                </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
               </div>
-
-              <div class="form-spacing">
-                <label class="label-header">Your Steazzy Weekly Budget</label>
-                <div class="row">
-                  <div class="col-xs-6">
-                    <div class="radio">
-                      <label class="primary-labels">
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        $5.00
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-xs-6">
-                   <div class="radio">
-                    <label class="primary-labels">
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      $10.00
-                    </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-spacing">
-                <label class="label-header"> Your Operating Systems</label>
-                <div class="row">
-                  <div class="col-xs-6">
-                    <div class="checkbox">
-                      <label class="primary-labels">
-                        <input type="checkbox"> Windows 7
-                      </label>
-                    </div>
-
-                    <div class="checkbox">
-                      <label class="primary-labels">
-                        <input type="checkbox"> Windows 8
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="checkbox">
-                      <label class="primary-labels">
-                        <input type="checkbox"> MacOSX
-                      </label>
-                    </div>
-
-                    <div class="checkbox">
-                      <label class="primary-labels">
-                        <input type="checkbox"> Linux
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <button type="submit" id="overlap-btn" class="btn-lg steazzy-btn center-block">Subscribe Now</button>
+              <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </button>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq">
+            <li>
+              <img src="http://placehold.it/35x35">
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User_Name <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li role="presentation" class="dropdown-header">Steazzy Profile</li>
+                <li><a href="#">View your Profile</a></li>
+                <li><a href="#">Edit your Profile</a></li>
+                <li role="presentation" class="dropdown-header">Steazzy Subscription</li>
+                <li><a href="#">Manage Your Subcription</a></li>
+                <li><a href="#">View Game Purchases</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Log Out<span class="glyphicon glyphicon-log-out pull-right" aria-hidden="true"></span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>  
+    <!-- cover photo -->
+    <div class="cover-photo">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="special-header-font text-center">FAQ</h2>
-            <h4 class="faq-header">1. What kind of games will Steazzy get for me?</h4>
-            <p>Steazzy will search and purchase great games that you do not currently have in your library. This may be a game you’ve heard of or it may be a undiscovered gem. It’s an adventure.</p>
-
-            <h4 class="faq-header">2. Why can’t I select the catagorey of games I’m interested in?</h4>
-            <p>Steazzy is still in it’s early stages, and has such is running very lean. We plan to expand the functionality as it grows based on the feedback of community members like you.</p>
-
-
-            <h4 class="faq-header">3. If I don’t like a game can I get a refund?</h4>
-            <p>Unfortunately no. We comply with Steam’s official policy which does not allow for refunds. It is however, very easy to cancel your service with Steazzy if you are disatisfied.</p>
+        <div class="row profile-top-info">
+          <div class="col-md-3">
+            <img class="profile-img" src="http://placehold.it/184x184">
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="final-plea">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h2 class="special-header-font text-center">Try it Today</h2>
-            <h2 class="text-center subheader-spacing">New games are out there waiting to be played!</h4>
-            <button type="submit" id="overlap-btn" class="btn-lg steazzy-btn center-block">Subscribe Now</button>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Dukeman</h1><p>online now</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>Profile</p><p>United States</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-3">
+            <h2 class="text-right">Level 14</h2>
           </div>
         </div>
       </div>
     </div>
 
-
-
-
+    <!-- Main content -->
+    <div class="container main-content">
+      <div class="row">
+      <!-- Games -->
+        <div class="col-md-9">
+          <div class="row col-padding">
+            <div class="col-md-12 steazzy-block">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Total Games Owned: </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 img-fill">
+                  <img class="center-block" src="http://placehold.it/184x69">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar -->
+        <div class="col-md-3">
+          <div class="row">
+          <!-- Recently played -->
+            <div class="row col-padding">
+              <div class="col-md-12 steazzy-block">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12 steazzy-block">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h2 class="text-center">Recently Played</h2>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <img class="center-block" src="http://placehold.it/184x69">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h3 class="text-center">Magic 2015</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
