@@ -1,7 +1,14 @@
 /* Variables */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Orbitron:400,700);
+.navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: RGBA(23, 18, 33, 0.8) !important;
+  color: white !important; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white !important; }
+
 /* Colors */
 /* Typography */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700|Orbitron:400,700);
 body {
   background-color: #2D2442 !important;
   height: 100%;
@@ -2978,7 +2985,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: RGBA(23, 18, 33, 0.5);
+  background-color: RGBA(23, 18, 33, 0.8);
   border: 1px solid #cccccc;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 4px;
@@ -3690,7 +3697,7 @@ tbody.collapse.in {
         margin-right: 0; } }
 
 .navbar-default {
-  background-color: RGBA(23, 18, 33, 0.5);
+  background-color: RGBA(23, 18, 33, 0.8);
   border-color: rgba(255, 255, 255, 0); }
   .navbar-default .navbar-brand {
     color: white; }

@@ -1,8 +1,18 @@
 /* Variables */
 $navbar-height: 35px;
 $navbar-default-color: white;
-$navbar-default-bg: RGBA(23, 18, 33, .5);
+$navbar-default-bg: RGBA(23, 18, 33, .8);
 $navbar-default-border: rgba(255, 255, 255, 0);
+.navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+background-color: $navbar-default-bg !important;
+color: white !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: white !important;
+}
+
+
 $navbar-default-link-active-bg: white;
 
 $navbar-default-brand-color: white;
